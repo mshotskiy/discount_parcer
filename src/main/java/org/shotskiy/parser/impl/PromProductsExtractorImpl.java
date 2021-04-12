@@ -26,10 +26,10 @@ public class PromProductsExtractorImpl implements ProductExtractor<DiscountItem>
 
     public DiscountItem getFromURL(String url) throws IOException, InterruptedException {
         if (iter >= 10) {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
             iter = 0;
         }
-        Thread.sleep(500);
+        Thread.sleep(200);
         Document page = Jsoup.connect(url)
                 .userAgent("Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) Gecko/20070725 Firefox/2.0.0.6")
                 .referrer("http://www.google.com")
