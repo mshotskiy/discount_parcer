@@ -29,7 +29,7 @@ public class PromProductsExtractorImpl implements ProductExtractor<DiscountItem>
             Thread.sleep(5000);
             iter = 0;
         }
-        Thread.sleep(400);
+        Thread.sleep(500);
         Document page = Jsoup.connect(url)
                 .userAgent("Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) Gecko/20070725 Firefox/2.0.0.6")
                 .referrer("http://www.google.com")

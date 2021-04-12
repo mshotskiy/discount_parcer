@@ -25,5 +25,6 @@ public class Main {
         discountItems.addAll(deviceExtractorImpl.getAllItems(links));
 
         discountItemWriter.writeToCSV(discountItems);
+        System.out.println("Parsing finished");
     }
 }
