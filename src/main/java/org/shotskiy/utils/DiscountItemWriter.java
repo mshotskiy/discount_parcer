@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.List;
 
-public class DiscountItemWriter {
+public class DiscountItemWriter implements ProductWriter<DiscountItem>{
 
 
     public void writeToCSV(List<DiscountItem> items) {
